@@ -20,6 +20,12 @@
     <main>
       <header class="topbar"><span>OPERATIONS / GUEST REQUESTS</span><span>Demo workspace <span class="avatar" aria-hidden="true">GD</span></span></header>
       <section class="page-heading" aria-labelledby="title"><p class="eyebrow">THE GUEST EXPERIENCE</p><h1 id="title">Small requests.<br><em>Better stays.</em></h1><p>One place for the things your guests need.<br>Pick a request, take care of it, and keep their day moving.</p></section>
+      <section class="next" aria-labelledby="next-title">
+        <div class="inbox-heading"><div><h2 id="next-title">Handle next</h2><p>Chosen by urgency, then longest wait</p></div></div>
+        <div id="next-body"><p class="next-note">Finding the next request…</p></div>
+        <div class="next-feedback"><p id="next-status" class="status" role="status"></p><button id="next-undo" class="quiet" type="button" hidden>Undo</button></div>
+        <p id="next-error" class="error" role="alert" hidden></p>
+      </section>
       <section class="inbox" aria-labelledby="inbox-title">
         <div class="inbox-heading"><div><h2 id="inbox-title">Your inbox <span id="open-count" class="count">…</span></h2><p>Oldest requests first</p></div><button id="refresh" class="quiet" type="button">Refresh inbox <span aria-hidden="true">↻</span></button></div>
         <div class="filters" role="group" aria-label="Filter requests"><button type="button" data-filter="open" aria-pressed="true">Open requests</button><button type="button" data-filter="all" aria-pressed="false">All requests</button><button type="button" data-filter="resolved" aria-pressed="false">Handled</button></div>
